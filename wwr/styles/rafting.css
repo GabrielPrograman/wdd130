@@ -30,6 +30,11 @@ nav ul {
   gap: 20px;
 }
 
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
 nav a {
     text-decoration: none;
     color: var(--primary-blue);
@@ -80,7 +85,8 @@ nav a {
     font-size: 0.95em;
 }
 
-.hero article img { 
+.hero article img {
+    float: right; 
     width: 150px;
     border: 2px solid var(--white);
     
