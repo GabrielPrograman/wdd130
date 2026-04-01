@@ -211,3 +211,85 @@ footer {
  
 
  }
+
+ .company-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    align-items: start;
+ }
+
+ .contact-text address {
+    font-style: normal;
+    line-height: 1.6;
+    margin-top: 10px;
+ }
+
+ .contact-form {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    
+ }
+
+ .contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+ }
+
+ .form-item {
+    display: flex;
+    flex-direction: column;
+ }
+
+ .form-item label {
+    margin-bottom: 5px;
+    font-weight: bold;
+ }
+
+ .form-item input,
+ .form-item textarea {
+    padding: 10;
+    border: 1px solid var(--accent-gray);
+    border-radius: 4px;
+ }
+
+ fieldset {
+    border: 1px solid var(--accent-gray);
+    padding: 15px;
+    border-radius: 4px;
+ }
+
+ .radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+ }
+
+ button[type="submit"]:hover {
+    background-color: #042958;
+    transform: scale(1.02);
+ }
+
+ .profile-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+ }
+
+.profile-gallery figure img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media (max-width: 700px) { 
+    .company-info,
+    .profile-gallery {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
