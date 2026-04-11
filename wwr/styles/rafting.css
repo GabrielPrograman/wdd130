@@ -250,7 +250,7 @@ footer {
      padding: 20px;
  }
 
- .profile.gallery img {
+ .profile-gallery img {
      width: 100%;
      height: 250px;
     object-fit: cover;
@@ -258,7 +258,7 @@ footer {
     border: 1px solid var(--accent-gray);
  }
 
- .profile.gallery figcaption {
+ .profile-gallery figcaption {
      font-weight: bold;
      margin-top: 10px;
      text-align: center;
