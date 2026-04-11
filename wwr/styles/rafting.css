@@ -235,6 +235,27 @@ footer {
     
  }
 
+ ,profile-gallery {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+     gap: 20px;
+     padding: 20px;
+ }
+
+ .profile.gallery img {
+     width: 100%;
+     height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid var(--accent-gray);
+ }
+
+ .profile.gallery figcaption {
+     font-weight: bold;
+     margin-top: 10px;
+     text-align: center;
+ }
+
  @media (max-width: 700px) {
     header {
         grid-template-columns: 1fr;
