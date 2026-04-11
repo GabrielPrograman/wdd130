@@ -7,7 +7,7 @@
     <title>Gabriel Alejandro Bruzual Patiño | WDD 130</title>
     <meta name="description" content="My home page for web Fundamentals for my WDD 130 class. Here you can find a little bit about me and my web development journey.">
     <meta name="author" content="Gabriel Alejandro">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/rafting.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -16,33 +16,74 @@
 
 <body>
    <header>
-        <nav> 
-            <a href="#">Home</a>
-            <a href="wwr/">Rafting Website</a>
-            <a href="wwr/site-plan-rafting.html">Siteplan</a>
-            <a href="https://linkedin.com">Profile</a>
+        <img src="images/logo.png" alt="White Water Rafting Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="site-plan-rafting.html">Site Plan</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
- <div class="grid">
+ 
     <main>
-        <h1>Gabriel Alejandro Bruzual Patiño | WDD 130</h1>
-        <img src="images/profile.jpg" alt="Gabriel Alejandro Bruzual Patiño" width="200">
-        <p>Hello, my name is Gabriel Alejandro Bruzual Patiño. I'm from Cumaná, Venezuela. I'm currently studying software development at BYU Pathway. I'm ready to learn more about web development so I can get a job and create a website to sell something or use this knowledge to earn money. I wonder where the future will take me.</p>
-        <ul class = "box indent">
-            <li><a href="https://www.churchofjesuschrist.org/temples/details/philadelphia-pennsylvania-temple" target="_blank">Philadelphia Pennsylvania Temple</a></li>
-            <li><a href="https://www.churchofjesuschrist.org/temples/details/paris-france-temple" target="_blank">Paris France Temple</a></li>
-            <li><a href="https://www.churchofjesuschrist.org/temples/details/lima-peru-los-olivos-temple" target="_blank">Berlin Germany Temple</a></li>
-        </ul>
+        <div class="hero">
+        <img src="images/hero-home.jpg" alt="Rafting in a river">
+        <h1>White Water Rafting a epic adventure awaits!</h1>
+        <article>
+            <p>Life is a journey, not a destination... We must finish strong ." - President thomas S. monson</p>
+            <img src="images/hero-small.jpg" alt="Rafting team working together">
+        </article>
+    </div>
 
-    </main>
-    <aside class ="box">
-        <h2>Sucre</h2>
-        <img src="images/playa-san-luis-cumana.jpg" alt="Sucre" width="200">
-        <p>"Sucre is one of the twenty-three states that, along with the Capital District and the Federal Dependencies, make up the Bolivarian Republic of Venezuela. Its capital is Cumaná. It is located in the northeastern region of the country, bordering the Caribbean Sea (Atlantic Ocean) and the state of Nueva Esparta to the north, the Gulf of Paria to the east, Monagas to the south, Anzoátegui to the southwest, and the Gulf of Cariaco to the west. It is composed of 15 municipalities divided into 57 parishes. It is named after the Grand Marshal of Ayacucho, Antonio José de Sucre." - wikipedia</p>
-    </aside>
-</div>
- <footer>
-     <p>&copy;2026 © Gabriel Alejandro © Cumaná, © Venezuela</p>
- </footer> 
-</body>
+    <section class="newsletter">
+        <h2>Join Our Adventure Newsletter</h2>
+        <p>Get tips, trips updates, and exclusive offers delivered to your inbox.</p>
+        <form action="#">
+            <div class="form-item">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" required>
+            </div>
+            <div class="form-item">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="user_email" required>
+           </div>
+           <button type="submit" class="cta-button">Subscribe</button>
+        </form>
+    </section>
+
+    <section class="home-grid">
+        <div class="card">
+            <img src="images/rafting-safety.jpg" alt="Rafting safety guidelines">
+            <h3>Safety First</h3>
+            <p>Your safety is our top priority. We follow strict safety protocols to ensure a fun and secure experience.</p>
+        </div>
+        <div class="card">
+            <img src="images/rafting-scenery.jpg" alt="Scenic rafting location">
+            <h3>Scenic Locations</h3>
+            <p>Experience breathtaking views and pristine nature as you navigate our thrilling rafting routes.</p>
+        </div>
+        <article class="call-to-action">
+            <h2>Ready for an Adventure?</h2>
+            <p>Join us for an unforgettable rafting experience!</p>
+            <a href="trips.html" class="cta-button">See Our Trips</a>
+        </article>
+        </section>
+        </main>
+
+    <footer>
+        <p>&copy; 2026 | White Water Rafting. | Gabriel Alejandro Bruzual Patiño | Cumana, Venezuela</p>
+        <nav class="sociallinks">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="Facebook Logo">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="Instagram Logo">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="Twitter Logo">
+            </a>
+        </nav>
+    </footer>
+
+ </body>
 </html>
